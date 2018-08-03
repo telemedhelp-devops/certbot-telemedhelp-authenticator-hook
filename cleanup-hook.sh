@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /opt/container-scripts/certbot-telemedhelp-authenticator-hook/_common.sh
+. /opt/certbot-telemedhelp-authenticator-hook/_common.sh
 
 CURRENT_RECORDS=( $(getRecords "$REAL_VERIFICATION_DOMAIN") )
 

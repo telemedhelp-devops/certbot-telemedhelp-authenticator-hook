@@ -1,10 +1,10 @@
 #!/bin/bash
 
-. /opt/container-scripts/certbot-telemedhelp-authenticator-hook/_common.sh
+. /opt/certbot-telemedhelp-authenticator-hook/_common.sh
 
 echo "${REAL_VERIFICATION_DOMAIN}:"
 
-/opt/container-scripts/certbot-telemedhelp-authenticator-hook/cleanup-hook.sh
+/opt/certbot-telemedhelp-authenticator-hook/cleanup-hook.sh
 
 addRecord "$REAL_VERIFICATION_DOMAIN" "$CERTBOT_VALIDATION"
 RC="$?"
